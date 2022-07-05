@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Profile(props) {
+const Profile = (props) => {
+    
     console.log(props);
     return (
         <div className="profile">
@@ -12,7 +13,6 @@ function Profile(props) {
                 <p className="profile__summary">{props.address}</p>
             </div>
         </div>
-    );
+    )
 }
-
 export default Profile;

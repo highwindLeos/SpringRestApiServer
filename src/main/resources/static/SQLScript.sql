@@ -1,8 +1,10 @@
+SELECT * FROM ALL_USERS; -- 사용자 확인 --
+
 CREATE TABLE UserProfile (
 	id VARCHAR2(64) PRIMARY KEY,
 	name VARCHAR2(64),
 	phone VARCHAR2(64),
 	address VARCHAR2(256)
-);
+); -- TABLE CREATE
 
 SELECT * FROM USERPROFILE;
