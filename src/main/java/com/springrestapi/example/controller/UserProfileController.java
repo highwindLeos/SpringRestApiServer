@@ -39,6 +39,11 @@ public class UserProfileController {
 		this.mapper = mapper;
 	}
 	
+	@GetMapping("/api/hello")
+    public String test() {
+        return "Hello, world!";
+    }
+	
 	@GetMapping("user/{id}")
 	public UserProfile getUserProfile(@PathVariable("id") String id) {
 		return mapper.getUserProfile(id);
